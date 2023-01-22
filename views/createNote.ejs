@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css  ">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="nav">
+            <h1><a href="/home">Minimal Notes</a></h1>
+            <ul class="menu">
+                <li><a href="/home">all notes</a></li>
+                <li><a href="/newNote">new note</a></li>
+                <li><a href="/login"><button class="logoutBtn">logout </button></a></li>
+            </ul>
+        </div>
+        <form action="/newNote" method="post" class="noteForm">
+            <input type="text" class="title" placeholder="Title" name = "title" autofocus>
+            <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Type something..."></textarea>
+            <button type="submit" class="newNotebtn">Create</button>
+        </form>
+    </div>
+</body>
+<script src="/public/script.js"></script>
+
+</html>
